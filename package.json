@@ -1,27 +1,53 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
-  "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
+  "name": "firstapp",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "express": "^4.17.1"
+    "@aws-amplify/api": "^1.2.4",
+    "@aws-amplify/cli": "^3.17.0",
+    "@aws-amplify/pubsub": "^1.2.4",
+    "aws-amplify": "^1.2.4",
+    "aws-amplify-react": "^2.5.4",
+    "awsmobile-cli": "^1.1.7",
+    "axios": "^0.19.0",
+    "babel": "^6.23.0",
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "jquery": "^3.4.1",
+    "react": "^16.9.0",
+    "react-app-polyfill": "^1.0.1",
+    "react-chat-ui": "^0.3.2",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.0.1"
   },
-  "engines": {
-    "node": "12.x"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "ie 11",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-class-properties": "^7.2.0"
+  }
 }
